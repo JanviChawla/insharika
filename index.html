@@ -104,8 +104,6 @@
 		<div id="info-window" style="display:none;">
 			<h3 id="form-name"></h3>
 			<p id="form-about"></p>
-			<button type="button" onclick="alert('Link to Appropriate Editor')">Get Started!</button>
-
 		</div>
 
 		<hr>
@@ -127,10 +125,12 @@
 	</body>
 </html>
 <script>
-$('.form').click(function() {
+$('.form').hover(function() {
 	$('#form-name').html($(this).html());
 	$('#form-about').html($(this).children().html());
 	$('#info-window').show();
+}, function() {
+	$('#info-window').hide();
 });
 
 </script>
