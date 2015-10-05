@@ -9,7 +9,7 @@ body {
 
 .site-wrapper {
   padding: 0 1.38em;
-  max-width: 680px;
+  max-width: 900px;
   margin: 70px auto 200px auto;
   font-size: 21px;
 }
@@ -47,8 +47,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   text-align: center;
-  padding-top: 1em;
-  padding-bottom: 0.5em;
 }
 
 ul, nav ul {
@@ -76,8 +74,7 @@ a:hover {
 
 footer {
   color: #aaa;
-  padding-left: 1em;
-  padding-right: 1em;
+  font-size: 18px;
 }
 
 hr {
@@ -93,8 +90,8 @@ hr {
 .form {
   display: inline-block;
   background-color: #eee;
-  padding: 1em 0.75em 0.75em 0.75em;
-  margin-right: 2em;
+  padding: 1em 0.5em 0.75em 0.5em;
+  margin-right: 1em;
   margin-bottom: 2em;
   width: 100px;
   text-align: center;
