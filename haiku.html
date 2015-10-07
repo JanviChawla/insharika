@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+
+        <!-- External CSS -->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/landing.css">
+
+        <!-- JavaScript -->
+        <!-- // <script src="scripts/js.js"></script> -->
+        <!-- jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <title>Insharika</title>
+    </head>
+    <body class="site-wrapper">
+        <div id="text-editor">
+            <textarea id="row-1" rows="1" cols="85" style="resize: none;" maxLength="25" required="true"></textarea>
+            <textarea id="row-2" rows="1" cols="85" style="resize: none;" maxLength="45" required="true"></textarea>
+            <textarea id="row-3" rows="1" cols="85" style="resize: none;" maxLength="25" required="true"></textarea>
+        </div>
+        <div id="nav-toggle">&#9776;</div>
+        <div class="ui-content" style="display: none">
+            <h5>Haiku</h5>
+            <div class="collapsable">
+                <h6>Description</h6>
+                <div class="data-toggle" style="display: none">
+                    A three-line poem of 5,7,5 syllables; haiku writers seek to capture a moment of perception. Haikus turn on strong natural images - using a word, called the kigo, that indicates the season - and relay intense emotions, often leading to spiritual insights. Contemporary haiku writers may drop the three-line requirement (often writing the poem as a single line) and/or the syllable count and/or the kigo.</div>
+            </div>
+
+            <div class="collapsable">
+                <h6>Examples</h6>
+                <ul class="data-toggle" data-role="listview" style="display: none;">
+                    <li><a href="#">Example1</a></li>
+                    <li><a href="#">Example2</a></li>
+                </ul>
+            </div>
+
+            <div class="collapsable">
+                <h6>Rhyme</h6>
+                <ul class="data-toggle" data-role="listview" style="display: none;">
+                    <li><a href="#">Word</a></li>
+                    <li><a href="#">Bird</a></li>
+                    <li><a href="#">Turd</a></li>
+                    <li><a href="#">Coward</a></li>
+                    <li><a href="#">Soured</a></li>
+                </ul>
+            </div>
+        </div>
+        <script>
+$(document).ready(function(){
+    $('#nav-toggle').click(function(){
+        $('.ui-content').toggle();
+    });
+    $('.collapsable').click(function(){
+        $($(this).children(".data-toggle")).toggle();
+    });
+});
+        </script>
+        <footer>
+
+            <p class="float-left">Senior design project by</p>
+
+            <nav class="float-right">
+                <ul>
+                    <li><a href="">Janvi Chawla</a></li>
+                    <li><a href="">Chelsea Chong</a></li>
+                    <li><a href="">Kristen Lawrence</a></li>
+                    <li><a href="">Jayne Wilson</a></li>
+                    <li><a href="">Kourtney Wright</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
+
