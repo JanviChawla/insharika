@@ -1,0 +1,12 @@
+{
+    "poems": [
+        {
+            "name":"Haiku",
+            "description":"A Haiku is a three line poem with a 5-7-5 syllable scheme."
+        },
+        {
+            "name":"Cinquain",
+            "description":"A Cinquain is a ..."
+        }
+    ]
+}
