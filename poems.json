@@ -1,12 +1,52 @@
 {
-    "poems": [
+    "poem": [
         {
             "name":"Haiku",
-            "description":"A Haiku is a three line poem with a 5-7-5 syllable scheme."
+           "description":"A three-line poem of 5,7,5 syllables; haiku writers seek to capture a moment of perception. Haikus turn on strong natural images - using a word, called the kigo, that indicates the season - and relay intense emotions, often leading to spiritual insights. Contemporary haiku writers may drop the three-line requirement (often writing the poem as a single line) and/or the syllable count and/or the kigo."
+        },
+        {
+            "name":"Tercet",
+            "description":"Three-line stanzas. When all three lines rhyme, tercets become triplets. When the rhyme patterns interlock like this - aba, bcb, cdc - linking stanzas, the tercet turns into terza rima."
+        },
+        {
+            "name":"Ghazal",
+            "description":"Generally ten to twenty-four lines in length and originally a Persian form, these long-lined couplets develop mystical and/or romantic themes. They may be monorhymed (aa, ba, ca, da) and/or include the poet’s name in the last line."
+        },
+        {
+            "name":"Tanka",
+            "description":"A traditional Japanese poem that is rendered in English in five lines of 5,7,5,7,7 syllables. Historically, tankas were combined with prose, linked together, and/or published to include exchanges of verse between poets. Subjects vary but often center on travel, love, and the seasons. As with haiku, in Japan today there are regular tanka competitions and a continuing appreciation of this form."
+        },
+        {
+            "name":"Prose",
+            "description":"A block-shaped, usually paragraphed text that relies on the poetic techniques of imagery and condensed, rhythmic, repetitive, often rhymed language and often makes its point via metaphor, analogy, or association, yet still may partake of fictional techniques like character building, plot, dialogue, and so on."
+        },
+        {
+            "name":"Sonnet",
+            "description":"A historical fixed form. The eight-line octave followed by the six-line sestet held numerical significance: it could be reduced to 4 and 3 and the total, 7. All three numbers were important in music composition as well as in religious thinking, four signifying the world and three the trinity, and so on. The Italian sonnet consists of an octave rhyming abbaabba and a sestet rhyming cdcdcd. The English sonnet, which developed out of the Italian, consists of fourteen line of iambic pentameter verse: three quatrains and a closing couplet, with a rhyme scheme of abab, cdcd, efef, gg. Poets have always adapted this structure, observing most consistently only its fourteen-line length."
+        },
+        {
+            "name":"Pantoum",
+            "description":"Sixteen or more lines long, pantoums developed in Malayan literature as rhyming quatrains (abab) but developed in English as unrhymed quatrains with repeating lines: the second and fourth lines of each stanza repeat as the first and third lines of the next stanza."
+        },
+        {
+            "name":"Villanelle",
+            "description":"A nineteen-line poem divided into six stanzas: five tercets and one quatrain turning on two rhymes and built on two refrains: A1 b A2, abA1, abA2, abA1, abA1A2. (A1 and A2 are refrains.)"
+        },
+        {
+            "name":"Terzanelle",
+            "description":"A nineteen-line poem divided into six stanzas: five interlocking triplets and a quatrain. Of French and Italian origin, it adapts terza rima to the villanelle form by the use of a repeton: A1 B A2, bCB, cDC, dED, eFE, f A1 (or F) F (or A 1) A2. (A1 and A2 are refrains; BCDEF are repetitions.)"
+        },
+        {
+            "name":"Quatrain",
+            "description":"A stanza of four lines, the most common form in English poetry. Quatrains consist of four lines of verse, rhymed or unrhymed: the envelope quatrain rhyme runs abba; the couplet quatrain runs aabb; the alternating quatrain runs abab; and the monorhyme quatrain runs aaaa."
         },
         {
             "name":"Cinquain",
-            "description":"A Cinquain is a ..."
+            "description":"A single stanza poem with the syllabic pattern of 2,4,6,8,2 syllables per line."
+        },
+        {
+            "name":"Sestina",
+            "description":"The poetic form requires that six end words be repeated in a set pattern across six stanzas and that all six words be used - again, in pattern - in a three-line final stanza, called an envoi."
         }
     ]
 }

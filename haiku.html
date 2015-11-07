@@ -7,9 +7,10 @@
   	<!-- External CSS -->
 		<link rel="stylesheet" href="style.css">
 
-		<!-- JavaScript -->
-		<!-- <script src="code-guide.js"></script> -->
-
+                <!-- JavaScript -->
+                <!-- <script src="code-guide.js"></script> -->
+                <!--jQuery -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
     <title>Insharika</title>
   </head>
   <body>
@@ -21,13 +22,13 @@
 
     <section>
       <header>
-        <h2>Haiku</h2>
+        <h2 id="name"></h2>
       </header>
     	<article>
     		<header>
     			<h3>Description</h3>
     		</header>
-		    <p>A three-line poem of 5,7,5 syllables; haiku writers seek to capture a moment of perception. Haikus turn on strong natural images - using a word, called the kigo, that indicates the season - and relay intense emotions, often leading to spiritual insights. Contemporary haiku writers may drop the three-line requirement (often writing the poem as a single line) and/or the syllable count and/or the kigo.</p>
+                <p id="description"></p>
 	    </article>
       <article>
         <header>
@@ -41,6 +42,16 @@
         </header>
         <p></p>
       </article>
+      <script>
+$.getJSON('poems.json', function(data) {
+  $.each(data.poem, function(i, f) {
+    if (f.name == 'Haiku') {
+      $('#name').html(f.name);
+      $('#description').html(f.description);
+    }
+  });
+});
+      </script>
     </section>
 
     <hr>
