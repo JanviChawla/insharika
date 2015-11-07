@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-  	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
 
-  	<!-- External CSS -->
-		<link rel="stylesheet" href="style.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 
-		<!-- JavaScript -->
-		<!-- <script src="code-guide.js"></script> -->
+    <!-- JavaScript -->
+    <!-- <script src="code-guide.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script src="side_menu.js"></script>
 
     <title>Insharika</title>
   </head>
   <body>
-  	<header>
-    	<h1><a href="index.html">Insharika</a></h1>
+    <header>
+      <h1><a href="index.html">Insharika</a></h1>
     </header>
 
     <hr>
 
     <section>
       <header>
-        <h2>Terzanelle</h2>
+        <h2 id="name" name="Terzanelle"></h2>
       </header>
-    	<article>
-    		<header>
-    			<h3>Description</h3>
-    		</header>
-		    <p>A nineteen-line poem divided into six stanzas: five interlocking triplets and a quatrain. Of French and Italian origin, it adapts terza rima to the villanelle form by the use of a repeton: A1 B A2, bCB, cDC, dED, eFE, f A1 (or F) F (or A 1) A2. (A1 and A2 are refrains; BCDEF are repetitions.)</p>
-	    </article>
+      <article>
+        <header>
+          <h3>Description</h3>
+        </header>
+        <p id="description"></p>
+      </article>
       <article>
         <header>
           <h3>Examples</h3>
@@ -41,6 +43,9 @@
         </header>
         <p></p>
       </article>
+      <script>
+populate_data();
+      </script>
     </section>
 
     <hr>
@@ -52,35 +57,35 @@
         </header>
         <article>
           <p>
-            <input type="text"> <span><i>A1</i></span><br />
-            <input type="text"> <span><i>B</i></span><br />
-            <input type="text"> <span><i>A2</i></span><br />
+          <input type="text"> <span><i>A1</i></span><br />
+          <input type="text"> <span><i>B</i></span><br />
+          <input type="text"> <span><i>A2</i></span><br />
           </p>
           <p>
-            <input type="text"> <span><i>b</i></span><br />
-            <input type="text"> <span><i>C</i></span><br />
-            <input type="text"> <span><i>B</i></span><br />
+          <input type="text"> <span><i>b</i></span><br />
+          <input type="text"> <span><i>C</i></span><br />
+          <input type="text"> <span><i>B</i></span><br />
           </p>
           <p>
-            <input type="text"> <span><i>c</i></span><br />
-            <input type="text"> <span><i>D</i></span><br />
-            <input type="text"> <span><i>C</i></span><br />
+          <input type="text"> <span><i>c</i></span><br />
+          <input type="text"> <span><i>D</i></span><br />
+          <input type="text"> <span><i>C</i></span><br />
           </p>
           <p>
-            <input type="text"> <span><i>d</i></span><br />
-            <input type="text"> <span><i>E</i></span><br />
-            <input type="text"> <span><i>D</i></span><br />
+          <input type="text"> <span><i>d</i></span><br />
+          <input type="text"> <span><i>E</i></span><br />
+          <input type="text"> <span><i>D</i></span><br />
           </p>
           <p>
-            <input type="text"> <span><i>e</i></span><br />
-            <input type="text"> <span><i>F</i></span><br />
-            <input type="text"> <span><i>E</i></span><br />
+          <input type="text"> <span><i>e</i></span><br />
+          <input type="text"> <span><i>F</i></span><br />
+          <input type="text"> <span><i>E</i></span><br />
           </p>
           <p>
-            <input type="text"> <span><i>f</i></span><br />
-            <input type="text"> <span><i>A1 / F</i></span><br />
-            <input type="text"> <span><i>F / A1</i></span><br />
-            <input type="text"> <span><i>A2</i></span><br />
+          <input type="text"> <span><i>f</i></span><br />
+          <input type="text"> <span><i>A1 / F</i></span><br />
+          <input type="text"> <span><i>F / A1</i></span><br />
+          <input type="text"> <span><i>A2</i></span><br />
           </p>
         </article>
         <input type="reset" value="Clear">
@@ -91,15 +96,15 @@
     <hr>
 
     <footer>
-    	<p>Senior design project by
-    	<ul>
-    		<li><a href="">Janvi Chawla</a></li>
-    		<li><a href="">Chelsea Chong</a></li>
-    		<li><a href="">Kristen Lawrence</a></li>
-    		<li><a href="">Jayne Wilson</a></li>
-    		<li><a href="">Kourtney Wright</a></li>
-    	</ul>
-    	</p>
+      <p>Senior design project by
+      <ul>
+        <li><a href="">Janvi Chawla</a></li>
+        <li><a href="">Chelsea Chong</a></li>
+        <li><a href="">Kristen Lawrence</a></li>
+        <li><a href="">Jayne Wilson</a></li>
+        <li><a href="">Kourtney Wright</a></li>
+      </ul>
+      </p>
     </footer>
   </body>
 </html>

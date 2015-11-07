@@ -9,6 +9,8 @@
 
 		<!-- JavaScript -->
 		<!-- <script src="code-guide.js"></script> -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script src="side_menu.js"></script>
 
     <title>Insharika</title>
   </head>
@@ -19,13 +21,13 @@
 
     <section>
       <header>
-        <h2>Sonnet</h2>
+        <h2 id="name" name="Sonnet"></h2>
       </header>
     	<article>
     		<header>
     			<h3>Description</h3>
     		</header>
-		    <p>A historical fixed form. The eight-line octave followed by the six-line sestet held numerical significance: it could be reduced to 4 and 3 and the total, 7. All three numbers were important in music composition as well as in religious thinking, four signifying the world and three the trinity, and so on. The Italian sonnet consists of an octave rhyming abbaabba and a sestet rhyming cdcdcd. The English sonnet, which developed out of the Italian, consists of fourteen line of iambic pentameter verse: three quatrains and a closing couplet, with a rhyme scheme of abab, cdcd, efef, gg. Poets have always adapted this structure, observing most consistently only its fourteen-line length.</p>
+		    <p id="description"></p>
 	    </article>
       <article>
         <header>
@@ -39,6 +41,9 @@
         </header>
         <p></p>
       </article>
+      <script>
+populate_data();
+      </script>
     </section>
 
     <hr>

@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-  	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
 
-  	<!-- External CSS -->
-		<link rel="stylesheet" href="style.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 
-		<!-- JavaScript -->
-		<!-- <script src="code-guide.js"></script> -->
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script src="side_menu.js"></script>
+
+    <!-- <script src="code-guide.js"></script> -->
 
     <title>Insharika</title>
   </head>
   <body>
-  	<header>
-    	<h1><a href="index.html">Insharika</a></h1>
+    <header>
+      <h1><a href="index.html">Insharika</a></h1>
     </header>
 
     <hr>
 
     <section>
       <header>
-        <h2>Tanka (also called waka or uta)</h2>
+        <h2 id="name" name="Tanka"></h2>
       </header>
-    	<article>
-    		<header>
-    			<h3>Description</h3>
-    		</header>
-		    <p>A traditional Japanese poem that is rendered in English in five lines of 5,7,5,7,7 syllables. Historically, tankas were combined with prose, linked together, and/or published to include exchanges of verse between poets. Subjects vary but often center on travel, love, and the seasons. As with haiku, in Japan today there are regular tanka competitions and a continuing appreciation of this form.</p>
-	    </article>
+      <article>
+        <header>
+          <h3>Description</h3>
+        </header>
+        <p id="description"></p>
+      </article>
       <article>
         <header>
           <h3>Examples</h3>
@@ -41,6 +44,9 @@
         </header>
         <p></p>
       </article>
+      <script>
+populate_data();
+      </script>
     </section>
 
     <hr>
@@ -52,11 +58,11 @@
         </header>
         <article>
           <p>
-            <input type="text"> <span>5 syllables</span><br />
-            <input type="text"> <span>7 syllables</span><br />
-            <input type="text"> <span>5 syllables</span><br />
-            <input type="text"> <span>7 syllables</span><br />
-            <input type="text"> <span>7 syllables</span><br />
+          <input type="text"> <span>5 syllables</span><br />
+          <input type="text"> <span>7 syllables</span><br />
+          <input type="text"> <span>5 syllables</span><br />
+          <input type="text"> <span>7 syllables</span><br />
+          <input type="text"> <span>7 syllables</span><br />
           </p>
         </article>
         <input type="reset" value="Clear">
@@ -67,15 +73,15 @@
     <hr>
 
     <footer>
-    	<p>Senior design project by
-    	<ul>
-    		<li><a href="">Janvi Chawla</a></li>
-    		<li><a href="">Chelsea Chong</a></li>
-    		<li><a href="">Kristen Lawrence</a></li>
-    		<li><a href="">Jayne Wilson</a></li>
-    		<li><a href="">Kourtney Wright</a></li>
-    	</ul>
-    	</p>
+      <p>Senior design project by
+      <ul>
+        <li><a href="">Janvi Chawla</a></li>
+        <li><a href="">Chelsea Chong</a></li>
+        <li><a href="">Kristen Lawrence</a></li>
+        <li><a href="">Jayne Wilson</a></li>
+        <li><a href="">Kourtney Wright</a></li>
+      </ul>
+      </p>
     </footer>
   </body>
 </html>

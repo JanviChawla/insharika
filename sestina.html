@@ -9,6 +9,8 @@
 
 		<!-- JavaScript -->
 		<!-- <script src="code-guide.js"></script> -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script src="side_menu.js"></script>
 
     <title>Insharika</title>
   </head>
@@ -21,13 +23,13 @@
 
     <section>
       <header>
-        <h2>Sestina</h2>
+        <h2 id="name" name="Sestina"></h2>
       </header>
     	<article>
     		<header>
     			<h3>Description</h3>
     		</header>
-		    <p>The poetic form requires that six end words be repeated in a set pattern across six stanzas and that all six words be used - again, in pattern - in a three-line final stanza, called an envoi.</p>
+		    <p id="name" name="Sestina"></p>
 	    </article>
       <article>
         <header>
@@ -41,6 +43,9 @@
         </header>
         <p></p>
       </article>
+      <script>
+populate_data();
+      </script>
     </section>
 
     <hr>

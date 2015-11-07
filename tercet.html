@@ -9,6 +9,8 @@
 
 		<!-- JavaScript -->
 		<!-- <script src="code-guide.js"></script> -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script src="side_menu.js"></script>
 
     <title>Insharika</title>
   </head>
@@ -21,13 +23,13 @@
 
     <section>
       <header>
-        <h2>Tercet</h2>
+        <h2 id="name" name="Tercet"></h2>
       </header>
     	<article>
     		<header>
     			<h3>Description</h3>
     		</header>
-		    <p>Three-line stanzas. When all three lines rhyme, tercets become triplets. When the rhyme patterns interlock like this - aba, bcb, cdc - linking stanzas, the tercet turns into terza rima.</p>
+		    <p id="description"></p>
 	    </article>
       <article>
         <header>
@@ -35,6 +37,9 @@
         </header>
         <p></p>
       </article>
+      <script>
+populate_data();
+      </script>
       <article>
         <header>
           <h3>RhymeZone</h3>

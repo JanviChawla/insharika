@@ -9,6 +9,8 @@
 
 		<!-- JavaScript -->
 		<!-- <script src="code-guide.js"></script> -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script src="side_menu.js"></script>
 
     <title>Insharika</title>
   </head>
@@ -21,13 +23,13 @@
 
     <section>
       <header>
-        <h2>Cinquain</h2>
+        <h2 id="name" name="Cinquain">Cinquain</h2>
       </header>
     	<article>
     		<header>
     			<h3>Description</h3>
     		</header>
-		    <p>A single stanza poem with the syllabic pattern of 2,4,6,8,2 syllables per line</p>
+		    <p id="description"></p>
 	    </article>
       <article>
         <header>
@@ -43,6 +45,9 @@
           <!-- INSERT RHYME SCRAPER HERE -->
         </p>
       </article>
+      <script>
+populate_data();
+      </script>
     </section>
 
     <hr>

@@ -9,6 +9,8 @@
 
 		<!-- JavaScript -->
 		<!-- <script src="code-guide.js"></script> -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script src="side_menu.js"></script>
 
     <title>Insharika</title>
   </head>
@@ -21,13 +23,13 @@
 
     <section>
       <header>
-        <h2>Ghazal</h2>
+        <h2 id="name" name="Ghazal"></h2>
       </header>
     	<article>
     		<header>
     			<h3>Description</h3>
     		</header>
-		    <p>Generally ten to twenty-four lines in length and originally a Persian form, these long-lined couplets develop mystical and/or romantic themes. They may be monorhymed (aa, ba, ca, da) and/or include the poet’s name in the last line.</p>
+		    <p id="description"></p>
 	    </article>
       <article>
         <header>
@@ -41,6 +43,9 @@
         </header>
         <p></p>
       </article>
+      <script>
+populate_data();
+      </script>
     </section>
 
     <hr>
