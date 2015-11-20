@@ -1,23 +1,87 @@
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    /* Set your content font stack here: */
+    font-family: "", sans-serif;
+}
+
 body {
-	background-color: #fdfdfd;
-	color: #242424;
+	background-image: url("../img/symphony.png");
+	color: #333;
 }
 
 .site-logo {
-	max-width: 150px;
-	background-color: #242424;
+	max-width: 170px;
 }
 
-header {
+.main {
+	background-color: #fcfcfc;
+	padding: 20px;
+	box-shadow: 0 0 10px #cdcdcd;
 	text-align: center;
+}
+
+.middle {
+	border: 1px solid blue;
+}
+
+.title {
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 10px;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 1.5em;
+	letter-spacing: 3px;
 }
 
 nav ul {
 	list-style: none;
-	/*margin-left: 0;*/
 	padding-left: 0;
+	/*padding-top: 30px;*/
 }
 
 nav ul li {
-  /*display: inline-block;*/
+  display: inline-block;
+	color: #333;
+  border-bottom: 1px inset #333;
+  padding: 25px;
+  margin: 15px;
+  width: 120px;
+  text-transform: lowercase;
 }
+
+nav ul li:hover {
+	background-color: #333;
+	color: #fcfcfc;
+}
+
+footer {
+	text-align: center;
+	margin-top: 30px;
+}
+
+footer > ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+footer > ul li {
+	display: inline-block;
+	margin: 2px;
+}
+
+footer > ul li img {
+	max-width: 35px;
+	opacity: 0.35;
+}
+
+footer > ul li img:hover {
+	max-width: 35px;
+	opacity: 1;
+}
+
+.float-left { float: left; }
+.float-right { float: right; }
+.float-clear { clear: both; }
