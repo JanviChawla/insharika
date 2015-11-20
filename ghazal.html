@@ -45,6 +45,7 @@
       </article>
       <script>
 populate_data();
+tooltip();
       </script>
     </section>
 
@@ -56,23 +57,23 @@ populate_data();
           <input type="text" name="title" placeholder="Title" autofocus>
         </header>
         <article>
-          <p>
+          <p class="poem-form">
             <input type="text"> <span></span><br />
             <input type="text"> <span><i>a</i></span><br />
           </p>
-          <p>
+          <p class="poem-form">
             <input type="text"> <span></span><br />
             <input type="text"> <span><i>a</i></span><br />
           </p>
-          <p>
+          <p class="poem-form">
             <input type="text"> <span></span><br />
             <input type="text"> <span><i>a</i></span><br />
           </p>
-          <p>
+          <p class="poem-form">
             <input type="text"> <span></span><br />
             <input type="text"> <span><i>a</i></span><br />
           </p>
-          <p>
+          <p class="poem-form">
             <input type="text"> <span></span><br />
             <input type="text"> <span>Include your name. <i>a</i></span><br />
           </p>
@@ -80,6 +81,9 @@ populate_data();
         <input type="reset" value="Clear">
         <input type="submit" value="Submit">
       </form>
+      <div id='tooltip'>
+        <button>Rhymes!</button>
+      </div>
     </section>
 
     <hr>

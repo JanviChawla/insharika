@@ -38,11 +38,16 @@
       <article>
         <header>
           <h3>RhymeZone</h3>
+          <p>Word: 
+            <input type="text" id="selected-text"> 
+            <button>Get Rhymes</button>
+          </p>
         </header>
         <p></p>
       </article>
       <script>
 populate_data();
+tooltip();
       </script>
     </section>
 
@@ -54,7 +59,7 @@ populate_data();
           <input type="text" name="title" placeholder="Title" autofocus>
         </header>
         <article>
-          <p>Italian<br />
+          <p class="poem-form">Italian<br />
             <input type="text"> <span><i>a</i></span><br />
             <input type="text"> <span><i>b</i></span><br />
             <input type="text"> <span><i>b</i></span><br />
@@ -64,7 +69,7 @@ populate_data();
             <input type="text"> <span><i>b</i></span><br />
             <input type="text"> <span><i>a</i></span><br />
           </p>
-          <p>
+          <p class="poem-form">
             <input type="text"> <span><i>c</i></span><br />
             <input type="text"> <span><i>d</i></span><br />
             <input type="text"> <span><i>c</i></span><br />
@@ -72,25 +77,25 @@ populate_data();
             <input type="text"> <span><i>c</i></span><br />
             <input type="text"> <span><i>d</i></span><br />
           </p>
-          <p>English<br />
+          <p class="poem-form">English<br />
             <input type="text"> <span><i>a</i></span><br />
             <input type="text"> <span><i>b</i></span><br />
             <input type="text"> <span><i>a</i></span><br />
             <input type="text"> <span><i>b</i></span><br />
           </p>
-          <p>
+          <p class="poem-form">
             <input type="text"> <span><i>c</i></span><br />
             <input type="text"> <span><i>d</i></span><br />
             <input type="text"> <span><i>c</i></span><br />
             <input type="text"> <span><i>d</i></span><br />
           </p>
-          <p>
+          <p class="poem-form">
             <input type="text"> <span><i>e</i></span><br />
             <input type="text"> <span><i>f</i></span><br />
             <input type="text"> <span><i>e</i></span><br />
             <input type="text"> <span><i>f</i></span><br />
           </p>
-          <p>
+          <p class="poem-form">
             <input type="text"> <span><i>g</i></span><br />
             <input type="text"> <span><i>g</i></span><br />
           </p>
@@ -98,6 +103,9 @@ populate_data();
         <input type="reset" value="Clear">
         <input type="submit" value="Submit">
       </form>
+      <div id='tooltip'>
+        <button>Rhymes!</button>
+      </div>
     </section>
 
     <hr>

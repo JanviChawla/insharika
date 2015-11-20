@@ -40,11 +40,16 @@
       <article>
         <header>
           <h3>RhymeZone</h3>
+          <p>Word: 
+            <input type="text" id="selected-text"> 
+            <button>Get Rhymes</button>
+          </p>
         </header>
         <p></p>
       </article>
       <script>
 populate_data();
+tooltip();
       </script>
     </section>
 
@@ -56,32 +61,32 @@ populate_data();
           <input type="text" name="title" placeholder="Title" autofocus>
         </header>
         <article>
-          <p>
+          <p class="poem-form">
           <input type="text"> <span><i>A1</i></span><br />
           <input type="text"> <span><i>B</i></span><br />
           <input type="text"> <span><i>A2</i></span><br />
           </p>
-          <p>
+          <p class="poem-form">
           <input type="text"> <span><i>b</i></span><br />
           <input type="text"> <span><i>C</i></span><br />
           <input type="text"> <span><i>B</i></span><br />
           </p>
-          <p>
+          <p class="poem-form">
           <input type="text"> <span><i>c</i></span><br />
           <input type="text"> <span><i>D</i></span><br />
           <input type="text"> <span><i>C</i></span><br />
           </p>
-          <p>
+          <p class="poem-form">
           <input type="text"> <span><i>d</i></span><br />
           <input type="text"> <span><i>E</i></span><br />
           <input type="text"> <span><i>D</i></span><br />
           </p>
-          <p>
+          <p class="poem-form">
           <input type="text"> <span><i>e</i></span><br />
           <input type="text"> <span><i>F</i></span><br />
           <input type="text"> <span><i>E</i></span><br />
           </p>
-          <p>
+          <p class="poem-form">
           <input type="text"> <span><i>f</i></span><br />
           <input type="text"> <span><i>A1 / F</i></span><br />
           <input type="text"> <span><i>F / A1</i></span><br />
@@ -91,6 +96,9 @@ populate_data();
         <input type="reset" value="Clear">
         <input type="submit" value="Submit">
       </form>
+      <div id='tooltip'>
+        <button>Rhymes!</button>
+      </div>
     </section>
 
     <hr>
