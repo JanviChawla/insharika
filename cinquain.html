@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-  	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
 
-  	<!-- External CSS -->
-		<link rel="stylesheet" href="style.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 
-		<!-- JavaScript -->
-		<!-- <script src="code-guide.js"></script> -->
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <!-- JavaScript -->
+    <!-- <script src="code-guide.js"></script> -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
     <script src="side_menu.js"></script>
 
     <title>Insharika</title>
   </head>
   <body>
-  	<header>
-    	<h1><a href="index.html">Insharika</a></h1>
+    <header>
+      <h1><a href="index.html">Insharika</a></h1>
     </header>
 
     <hr>
@@ -25,12 +25,12 @@
       <header>
         <h2 id="name" name="Cinquain">Cinquain</h2>
       </header>
-    	<article>
-    		<header>
-    			<h3>Description</h3>
-    		</header>
-		    <p id="description"></p>
-	    </article>
+      <article>
+        <header>
+          <h3>Description</h3>
+        </header>
+        <p id="description"></p>
+      </article>
       <article>
         <header>
           <h3>Examples</h3>
@@ -40,6 +40,10 @@
       <article>
         <header>
           <h3>RhymeZone</h3>
+          <p>Word: 
+            <input type="text" id="selected-text"> 
+            <button>Get Rhymes</button>
+          </p>
         </header>
         <p>
           <!-- INSERT RHYME SCRAPER HERE -->
@@ -47,6 +51,7 @@
       </article>
       <script>
 populate_data();
+tooltip();
       </script>
     </section>
 
@@ -58,7 +63,7 @@ populate_data();
           <input type="text" name="title" placeholder="Title" autofocus>
         </header>
         <article>
-          <p>
+          <p class="poem-form">
             <input type="text"> <span>One word (subject, noun)</span><br />
             <input type="text"> <span>Two words (adjectives) describing line 1</span><br />
             <input type="text"> <span>Three words (action verbs) relating to line 1</span><br />
@@ -69,20 +74,23 @@ populate_data();
         <input type="reset" value="Clear">
         <input type="submit" value="Submit">
       </form>
+      <div id='tooltip'>
+        <button>Rhymes!</button>
+      </div>
     </section>
 
     <hr>
 
     <footer>
-    	<p>Senior design project by
-    	<ul>
-    		<li><a href="">Janvi Chawla</a></li>
-    		<li><a href="">Chelsea Chong</a></li>
-    		<li><a href="">Kristen Lawrence</a></li>
-    		<li><a href="">Jayne Wilson</a></li>
-    		<li><a href="">Kourtney Wright</a></li>
-    	</ul>
-    	</p>
+      <p>Senior design project by
+      <ul>
+        <li><a href="">Janvi Chawla</a></li>
+        <li><a href="">Chelsea Chong</a></li>
+        <li><a href="">Kristen Lawrence</a></li>
+        <li><a href="">Jayne Wilson</a></li>
+        <li><a href="">Kourtney Wright</a></li>
+      </ul>
+      </p>
     </footer>
   </body>
 </html>

@@ -38,11 +38,16 @@
       <article>
         <header>
           <h3>RhymeZone</h3>
+          <p>Word: 
+            <input type="text" id="selected-text"> 
+            <button>Get Rhymes</button>
+          </p>
         </header>
         <p></p>
       </article>
       <script>
 populate_data();
+tooltip();
       </script>
     </section>
 
@@ -54,25 +59,25 @@ populate_data();
           <input type="text" name="title" placeholder="Title" autofocus>
         </header>
         <article>
-          <p>
+          <p class="poem-form">
             <input type="text"> <span><i>(1)</i></span><br />
             <input type="text"> <span><i>(2)</i></span><br />
             <input type="text"> <span><i>(3)</i></span><br />
             <input type="text"> <span><i>(4)</i></span><br />
           </p>
-          <p>
+          <p class="poem-form">
             <input type="text"> <span><i>(2)</i></span><br />
             <input type="text"> <span><i>(5)</i></span><br />
             <input type="text"> <span><i>(4)</i></span><br />
             <input type="text"> <span><i>(6)</i></span><br />
           </p>
-          <p>
+          <p class="poem-form">
             <input type="text"> <span><i>(5)</i></span><br />
             <input type="text"> <span><i>(7)</i></span><br />
             <input type="text"> <span><i>(6)</i></span><br />
             <input type="text"> <span><i>(8)</i></span><br />
           </p>
-          <p>
+          <p class="poem-form">
             <input type="text"> <span><i>(7)</i></span><br />
             <input type="text"> <span><i>(3)</i></span><br />
             <input type="text"> <span><i>(8)</i></span><br />
@@ -82,6 +87,9 @@ populate_data();
         <input type="reset" value="Clear">
         <input type="submit" value="Submit">
       </form>
+      <div id='tooltip'>
+        <button>Rhymes!</button>
+      </div>
     </section>
 
     <hr>

@@ -40,11 +40,16 @@
       <article>
         <header>
           <h3>RhymeZone</h3>
+          <p>Word: 
+            <input type="text" id="selected-text"> 
+            <button>Get Rhymes</button>
+          </p>
         </header>
         <p></p>
       </article>
       <script>
 populate_data();
+tooltip();
       </script>
     </section>
 
@@ -56,25 +61,25 @@ populate_data();
           <input type="text" name="title" placeholder="Title" autofocus>
         </header>
         <article>
-          <p class="envelope">Envelope<br />
+          <p class="envelope poem-form">Envelope<br />
             <input type="text"> <span><i>a</i></span><br />
             <input type="text"> <span><i>b</i></span><br />
             <input type="text"> <span><i>b</i></span><br />
             <input type="text"> <span><i>a</i></span><br />
           </p>
-          <p class="couplet">Couplet<br />
+          <p class="couplet poem-form">Couplet<br />
             <input type="text"> <span><i>a</i></span><br />
             <input type="text"> <span><i>a</i></span><br />
             <input type="text"> <span><i>b</i></span><br />
             <input type="text"> <span><i>b</i></span><br />
           </p>
-          <p class="alternating">Alternating<br />
+          <p class="alternating poem-form">Alternating<br />
             <input type="text"> <span><i>a</i></span><br />
             <input type="text"> <span><i>b</i></span><br />
             <input type="text"> <span><i>a</i></span><br />
             <input type="text"> <span><i>b</i></span><br />
           </p>
-          <p class="monorhyme">Monorhyme<br />
+          <p class="monorhyme poem-form">Monorhyme<br />
             <input type="text"> <span><i>a</i></span><br />
             <input type="text"> <span><i>a</i></span><br />
             <input type="text"> <span><i>a</i></span><br />
@@ -84,6 +89,9 @@ populate_data();
         <input type="reset" value="Clear">
         <input type="submit" value="Submit">
       </form>
+      <div id='tooltip'>
+        <button>Rhymes!</button>
+      </div>
     </section>
 
     <hr>

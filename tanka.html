@@ -41,11 +41,16 @@
       <article>
         <header>
           <h3>RhymeZone</h3>
+          <p>Word: 
+            <input type="text" id="selected-text"> 
+            <button>Get Rhymes</button>
+          </p>
         </header>
         <p></p>
       </article>
       <script>
 populate_data();
+tooltip();
       </script>
     </section>
 
@@ -57,7 +62,7 @@ populate_data();
           <input type="text" name="title" placeholder="Title" autofocus>
         </header>
         <article>
-          <p>
+          <p class="poem-form">
           <input type="text"> <span>5 syllables</span><br />
           <input type="text"> <span>7 syllables</span><br />
           <input type="text"> <span>5 syllables</span><br />
@@ -68,6 +73,9 @@ populate_data();
         <input type="reset" value="Clear">
         <input type="submit" value="Submit">
       </form>
+      <div id='tooltip'>
+        <button>Rhymes!</button>
+      </div>
     </section>
 
     <hr>
