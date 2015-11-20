@@ -1,0 +1,23 @@
+body {
+	background-color: #fdfdfd;
+	color: #242424;
+}
+
+.site-logo {
+	max-width: 150px;
+	background-color: #242424;
+}
+
+header {
+	text-align: center;
+}
+
+nav ul {
+	list-style: none;
+	/*margin-left: 0;*/
+	padding-left: 0;
+}
+
+nav ul li {
+  /*display: inline-block;*/
+}
