@@ -25,36 +25,74 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/side_menu.js"></script>
 
-    <title>Insharika | Cinquain</title>
+    <title>Insharika</title>
   </head>
   <body>
 
+    
     <div class="pure-g">
-      <div class="pure-u-18-24 main">
-        <section>
+      <div class="pure-u-1-24 navbar">
+        <header>
+          <h1><a href="index.html"><img src="img/insharika-dark.gif" alt="Insharika" class="site-logo" /></a></h1>
+        </header>
+          
+        
+
+        <nav>
+          <ul>
+            <li><a href=""><img src="img/gold-palette.gif" alt="Gold theme" /></a></li>
+            <li><a href=""><img src="img/green-palette.gif" alt="Green theme" /></a></li>
+            <li><a href=""><img src="img/plumrose-palette.gif" alt="Plumrose theme" /></a></li>
+            <li><a href=""><img src="img/gold-palette.gif" alt="Night theme" /></a></li>
+          </ul>
+
           <form>
+          <input type="image" src="img/gold-check.gif" alt="Submit">
+        </nav>
+
+        <footer>
+          <ul>
+            <li><a href=""><img src="img/janvi.gif" alt="Janvi Chawla" /></a></li>
+            <li><a href=""><img src="img/chelsea.gif" alt="Chelsea Chong" /></a></li>
+            <li><a href=""><img src="img/kristen.gif" alt="Kristen Lawrence" /></a></li>
+            <li><a href=""><img src="img/jayne.gif" alt="Jayne Wilson" /></a></li>
+            <li><a href=""><img src="img/kourtney.gif" alt="Kourtney Wright" /></a></li>
+          </ul>
+        </footer>
+      </div>
+
+      <div class="pure-u-2-24"></div>
+
+      <div class="pure-u-13-24 main">
+        <section>
             <header>
               <input type="text" name="title" placeholder="Title" autofocus>
             </header>
             <article>
               <p class="poem-form">
-                <input type="text"> <span>One word (subject, noun)</span><br />
-                <input type="text"> <span>Two words (adjectives) describing line 1</span><br />
-                <input type="text"> <span>Three words (action verbs) relating to line 1</span><br />
-                <input type="text"> <span>Four words (feelings or a complete sentence) relating to line 1</span><br />
-                <input type="text"> <span>One word (synonym of line 1 or word that sums it up)</span><br />
+                <input type="text">
+                <span class="float-right">One word (subject, noun)</span><br />
+                <input type="text">
+                <span class="float-right">Two words (adjectives) describing line 1</span><br />
+                <input type="text">
+                <span class="float-right">Three words (action verbs) relating to line 1</span><br />
+                <input type="text">
+                <span class="float-right">Four words (feelings or a complete sentence) relating to line 1</span><br />
+                <input type="text">
+                <span class="float-right">One word (synonym of line 1 or word that sums it up)</span>
+
+                <div class="float-clear"></div>
               </p>
             </article>
-            <input type="reset" value="Clear">
-            <input type="submit" value="Submit">
+           <!--  <input type="reset" value="Clear">
+            <input type="submit" value="Submit"> -->
           </form>
-          <div id='tooltip'>
-            <button>Rhymes!</button>
-          </div>
         </section>
       </div>
 
-      <div class="pure-u-6-24 sidebar">
+      <div class="pure-u-2-24"></div>
+
+      <div class="pure-u-6-24 sidemenu">
         <section>
           <header>
             <h2 id="name" name="Cinquain">Cinquain</h2>
@@ -85,14 +123,11 @@
           </article>
           <script>
             populate_data();
-            tooltip();
+            setSelectedText();
           </script>
         </section>
       </div>
     </div>
 
-
-
-    
   </body>
 </html>

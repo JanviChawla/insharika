@@ -30,6 +30,7 @@ h2 {
 	text-transform: uppercase;
 	font-size: 1.5em;
 	letter-spacing: 3px;
+	/*font-weight: bold;*/
 }
 
 nav ul {
@@ -59,22 +60,22 @@ footer {
 	margin-top: 30px;
 }
 
-footer > ul {
+footer ul {
 	list-style: none;
 	padding-left: 0;
 }
 
-footer > ul li {
+footer ul li {
 	display: inline-block;
 	margin: 2px;
 }
 
-footer > ul li img {
+footer ul li img {
 	max-width: 35px;
 	opacity: 0.35;
 }
 
-footer > ul li img:hover {
+footer ul li img:hover {
 	max-width: 35px;
 	opacity: 1;
 }
