@@ -20,10 +20,6 @@ body {
 	text-align: center;
 }
 
-.middle {
-	border: 1px solid blue;
-}
-
 .title {
 	text-align: center;
 	margin-top: 70px;
@@ -55,6 +51,7 @@ nav ul li {
 nav ul li:hover {
 	background-color: #333;
 	color: #fcfcfc;
+	/*font-weight: bold;*/
 }
 
 footer {
