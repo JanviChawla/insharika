@@ -10,7 +10,7 @@
 		<!-- JavaScript -->
 		<!-- <script src="code-guide.js"></script> -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-    <script src="side_menu.js"></script>
+    <script src="js/side_menu.js"></script>
 
     <title>Insharika</title>
   </head>
@@ -60,7 +60,7 @@ setSelectedText();
         </header>
         <article>
           <p class="poem-form">
-            <input type="text"> <span><i>(1)</i></span><br />
+          <input type="text"> <span><i>(1)</i></span><br /><button>1</button>
             <input type="text"> <span><i>(2)</i></span><br />
             <input type="text"> <span><i>(3)</i></span><br />
             <input type="text"> <span><i>(4)</i></span><br />
@@ -83,6 +83,12 @@ setSelectedText();
             <input type="text"> <span><i>(8)</i></span><br />
             <input type="text"> <span><i>(1)</i></span><br />
           </p>
+          <script>
+$("button").click(function() {
+  var text = $(this).text();
+  $("input").val(text);
+});
+          </script>
         </article>
         <input type="reset" value="Clear">
         <input type="submit" value="Submit">
