@@ -10,7 +10,7 @@
 		<!-- JavaScript -->
 		<!-- <script src="code-guide.js"></script> -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-    <script src="side_menu.js"></script>
+    <script src="js/side_menu.js"></script>
 
     <title>Insharika</title>
   </head>
@@ -60,29 +60,38 @@ setSelectedText();
         </header>
         <article>
           <p class="poem-form">
-            <input type="text"> <span><i>(1)</i></span><br />
-            <input type="text"> <span><i>(2)</i></span><br />
-            <input type="text"> <span><i>(3)</i></span><br />
-            <input type="text"> <span><i>(4)</i></span><br />
+          <input type="text" class="line-1"> <span><i>(1)</i></span><br />
+            <input type="text" class="line-2"> <span><i>(2)</i></span><br />
+            <input type="text" class="line-3"> <span><i>(3)</i></span><br />
+            <input type="text" class="line-4"> <span><i>(4)</i></span><br />
           </p>
           <p class="poem-form">
-            <input type="text"> <span><i>(2)</i></span><br />
-            <input type="text"> <span><i>(5)</i></span><br />
-            <input type="text"> <span><i>(4)</i></span><br />
-            <input type="text"> <span><i>(6)</i></span><br />
+            <input type="text" class="line-2"> <span><i>(2)</i></span><br />
+            <input type="text" class="line-5"> <span><i>(5)</i></span><br />
+            <input type="text" class="line-4"> <span><i>(4)</i></span><br />
+            <input type="text" class="line-6"> <span><i>(6)</i></span><br />
           </p>
           <p class="poem-form">
-            <input type="text"> <span><i>(5)</i></span><br />
-            <input type="text"> <span><i>(7)</i></span><br />
-            <input type="text"> <span><i>(6)</i></span><br />
-            <input type="text"> <span><i>(8)</i></span><br />
+            <input type="text" class="line-5"> <span><i>(5)</i></span><br />
+            <input type="text" class="line-7"> <span><i>(7)</i></span><br />
+            <input type="text" class="line-6"> <span><i>(6)</i></span><br />
+            <input type="text" class="line-8"> <span><i>(8)</i></span><br />
           </p>
           <p class="poem-form">
-            <input type="text"> <span><i>(7)</i></span><br />
-            <input type="text"> <span><i>(3)</i></span><br />
-            <input type="text"> <span><i>(8)</i></span><br />
-            <input type="text"> <span><i>(1)</i></span><br />
+            <input type="text" class="line-7"> <span><i>(7)</i></span><br />
+            <input type="text" class="line-3"> <span><i>(3)</i></span><br />
+            <input type="text" class="line-8"> <span><i>(8)</i></span><br />
+            <input type="text" class="line-1"> <span><i>(1)</i></span><br />
           </p>
+          <script>
+$(document).ready(function() {
+  $("span").click(function() {
+    var line = $(this).prev().attr("class");
+    var text = $(this).prev().val();
+    $("."+line).val(text);
+  });
+});
+          </script>
         </article>
         <input type="reset" value="Clear">
         <input type="submit" value="Submit">
