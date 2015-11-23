@@ -29,8 +29,9 @@ h3 {
 
 .sidemenu {
 	padding: 25px;
-	/*box-shadow: 0 -10px 10px #cdcdcd;*/
-	border-left: 3px solid #ddd;
+	box-shadow: 0 -10px 10px #cdcdcd;
+	/*border-left: 3px solid #ddd;*/
+	background-image: url("../img/symphony.png");
 }
 
 .main {
@@ -42,6 +43,7 @@ h3 {
 .main input[type="text"] {
 	border: none;
 	border-bottom: 2px solid #ddd;
+	/*border-bottom: 2px solid #eba900;*/
 	padding: 10px;
 	margin: 10px;
 	width: 100%;
@@ -50,6 +52,7 @@ h3 {
 
 .main input[name="title"] {
 	text-align: center;
+	font-size: 2em;
 }
 
 span {
@@ -60,11 +63,13 @@ span {
 }
 
 .navbar {
-	text-align: right;
+	text-align: center;
+	background-image: url("../img/symphony.png");
+	box-shadow: 0 -10px 10px #cdcdcd;
 }
 
 nav a img, nav input[type="image"] {
-	max-width: 35px;
+	max-width: 50px;
 }
 
 nav ul {
@@ -78,8 +83,8 @@ nav input[type="image"] {
 
 footer {
 	position: absolute;
-	right: 0;
 	bottom: 0;
+	text-align: center;
 	/*border: 1px solid lightgreen;*/
 }
 
@@ -89,7 +94,7 @@ footer ul {
 }
 
 footer ul li {
-	/*text-align: center;*/
+	display: inline-block;
 }
 
 footer ul li img {
