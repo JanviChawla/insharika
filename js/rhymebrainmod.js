@@ -249,7 +249,8 @@ function setStyle(div)
     div.style.padding = "0.5em 0.5em 0.5em 0em";
     div.style.width = "5em";
 	div.style.fontSize="small";
-
+	div.style.alignContent="center";
+	
     if ( TextColour !== null ) {
         div.style.color = TextColour;
     }
@@ -261,6 +262,7 @@ function setH4Style(h4)
     h4.style.clear = "both";
     //h4.style.paddingTop = "1em";
     h4.style.margin= "5px";
+	h4.style.fontSize="medium";
 	
     if ( TextColour !== null ) {
         h4.style.color = TextColour;
@@ -268,17 +270,26 @@ function setH4Style(h4)
 	
 }
 
+function setResultStyle(res) 
+{
+	res.style.maxWidth="50%";
+	res.style.border = "thin dotted gray";
+	res.style.overflow = "auto";
+}
+
 function display(words, div)
 {
     var resultDiv = $(div);
     resultDiv.empty();
-
+	
     var i;
 
     if ( words.length === 0 ) {
         resultDiv.text("No rhymes were found.");
     }
 
+	setResultStyle(resultDiv[0]);
+	
     var highest;
     var wordclass = "wordpanel";
     var firstSeparator = true;
@@ -304,7 +315,6 @@ function display(words, div)
 
         }
         div[0].t = words[i]["word"];
-
         resultDiv.append(div);
     }
 
