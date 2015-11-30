@@ -10,6 +10,7 @@
     <link href="css/pure-min.css" rel="stylesheet">
     <link href="css/grids-responsive-min.css" rel="stylesheet">
     <link href="css/poem.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,24 +25,21 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/side_menu.js"></script>
+    <script src="js/jquery.sidebar.min.js"></script>
 
     <title>Insharika</title>
   </head>
   <body>
-
-    <div class="pure-g header">
-      <div class="pure-u-1-1">
+    
+    <div class="pure-g">
+      <div class="pure-u-1-1 header">
         <header>
           <h1><a href="index.html"><img src="img/insharika-dark.gif" alt="Insharika" class="site-logo" /></a></h1>
         </header>
       </div>
-    </div>
 
-    
-    <div class="pure-g content">
+
       <div class="pure-u-2-24 navbar">
-          
-        
 
         <nav>
           <ul>
@@ -55,6 +53,12 @@
           <input type="image" src="img/gold-check.gif" alt="Submit">
         </nav>
 
+        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+
+        <script type="text/javascript">
+          $(".sidebar.right").sidebar({side: "right"});
+        </script>
+
         <footer>
           <ul>
             <li><a href=""><img src="img/janvi.gif" alt="Janvi Chawla" /></a></li>
@@ -66,9 +70,9 @@
         </footer>
       </div>
 
-      <div class="pure-u-2-24"></div>
+      <div class="pure-u-1-24"></div>
 
-      <div class="pure-u-12-24 main">
+      <div class="pure-u-14-24 main">
         <section>
             <header>
               <input type="text" name="title" placeholder="Title" autofocus>
@@ -93,9 +97,9 @@
         </section>
       </div>
 
-      <div class="pure-u-2-24"></div>
+      <div class="pure-u-1-24"></div>
 
-      <div class="pure-u-6-24 sidemenu">
+      <div class="pure-u-6-24 sidemenu sidebar-wrapper">
         <section>
           <header>
             <h2 id="name" name="Cinquain">Cinquain</h2>
@@ -133,6 +137,15 @@
         </section>
       </div>
     </div>
+
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
 
   </body>
 </html>

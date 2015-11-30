@@ -6,11 +6,47 @@ html, button, input, select, textarea,
 
 body {
 	background-color: #fcfcfc;
+	/*background-image: url("../img/symphony.png");*/
 	color: #333;
+}
+
+.pure-g {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	border: 1px solid red;
 }
 
 .header {
 	background-image: url("../img/symphony.png");
+}
+
+/*
+.navbar, .main, .sidemenu {
+	display: inline-block;
+}*/
+
+.navbar {
+	position: absolute;
+	top: 93px;
+	left: 0;
+	bottom: 0;
+}
+
+.main {
+	position: absolute;
+	top: 93px;
+	left: 12.5%;
+	bottom: 0;
+}
+
+.sidemenu {
+	position: absolute;
+	top: 93px;
+	right: 0;
+	bottom: 0;
 }
 
 .site-logo {
@@ -35,11 +71,12 @@ h3 {
 .sidemenu {
 	padding: 25px;
 	/*box-shadow: 0 -10px 10px #cdcdcd;*/
-	border-left: 3px solid #ddd;
+	/*border-left: 3px solid #ddd;*/
 	background-image: url("../img/symphony.png");
 }
 
 .main {
+	background-color: #fcfcfc;
 	text-align: center;
 	padding: 50px;
 	font-size: 1.2em;
@@ -49,8 +86,8 @@ h3 {
 	border: none;
 	border-bottom: 2px solid #ddd;
 	/*border-bottom: 2px solid #eba900;*/
-	padding: 10px;
-	margin: 10px;
+	padding: 10px 0 10px 0;
+	margin: 10px 0 10px 0;
 	width: 100%;
 	background-color: #fcfcfc;
 }
@@ -69,7 +106,7 @@ span {
 
 .navbar {
 	text-align: center;
-	background-image: url("../img/symphony.png");
+	/*background-image: url("../img/symphony.png");*/
 	/*box-shadow: 0 -10px 10px #cdcdcd;*/
 }
 
@@ -84,10 +121,6 @@ nav ul {
 
 nav input[type="image"] {
 	background-image: url("../img/gold-check.gif");
-}
-
-.content {
-	/*display: block;*/
 }
 
 footer {
@@ -114,6 +147,10 @@ footer ul li img {
 footer ul li img:hover {
 	max-width: 35px;
 	opacity: 1;
+}
+
+.right {
+	border: 1px solid pink;
 }
 
 .float-left { float: left; }
