@@ -1,10 +1,10 @@
 function populate_data() {
-  $.getJSON('poems.json', function(data) {
-    var poem_name = $('#name').attr("name");
-    $.each(data.poem, function(i, f) {
+  jQuery.getJSON('poems.json', function(data) {
+    var poem_name = jQuery('#name').attr("name");
+    jQuery.each(data.poem, function(i, f) {
       if (f.name == poem_name) {
-        $('#name').html(f.name);
-        $('#description').html(f.description);
+        jQuery('#name').html(f.name);
+        jQuery('#description').html(f.description);
       }
     });
   });

@@ -88,11 +88,11 @@ setSelectedText();
             <input type="text" class="line-1"> <span><i>(1)</i></span><br />
           </p>
           <script>
-$(document).ready(function() {
-  $("span").click(function() {
-    var line = $(this).prev().attr("class");
-    var text = $(this).prev().val();
-    $("."+line).val(text);
+jQuery(document).ready(function() {
+  jQuery("span").click(function() {
+    var line = jQuery(this).prev().attr("class");
+    var text = jQuery(this).prev().val();
+    jQuery(line).val(text);
   });
 });
           </script>
