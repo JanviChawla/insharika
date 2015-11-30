@@ -9,8 +9,13 @@ body {
 	color: #333;
 }
 
+.header {
+	background-image: url("../img/symphony.png");
+}
+
 .site-logo {
-	max-width: 2em;
+	max-height: 2em;
+	margin-left: 1em;
 }
 
 h2 {
@@ -29,8 +34,8 @@ h3 {
 
 .sidemenu {
 	padding: 25px;
-	box-shadow: 0 -10px 10px #cdcdcd;
-	/*border-left: 3px solid #ddd;*/
+	/*box-shadow: 0 -10px 10px #cdcdcd;*/
+	border-left: 3px solid #ddd;
 	background-image: url("../img/symphony.png");
 }
 
@@ -65,7 +70,7 @@ span {
 .navbar {
 	text-align: center;
 	background-image: url("../img/symphony.png");
-	box-shadow: 0 -10px 10px #cdcdcd;
+	/*box-shadow: 0 -10px 10px #cdcdcd;*/
 }
 
 nav a img, nav input[type="image"] {
@@ -81,11 +86,15 @@ nav input[type="image"] {
 	background-image: url("../img/gold-check.gif");
 }
 
+.content {
+	/*display: block;*/
+}
+
 footer {
 	position: absolute;
 	bottom: 0;
 	text-align: center;
-	/*border: 1px solid lightgreen;*/
+	border: 1px solid lightgreen;
 }
 
 footer ul {
