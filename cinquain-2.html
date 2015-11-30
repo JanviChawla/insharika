@@ -74,16 +74,16 @@
               <input type="text" name="title" placeholder="Title" autofocus>
             </header>
             <article>
-              <p class="poem-form">
-                <input type="text">
-                <span class="float-right">One word (subject, noun)</span><br />
-                <input type="text">
+              <p class>
+                <input type="text" class="poem-form">
+                <span class="float-right" class="poem-form">One word (subject, noun)</span><br />
+                <input type="text" class="poem-form">
                 <span class="float-right">Two words (adjectives) describing line 1</span><br />
-                <input type="text">
+                <input type="text" class="poem-form">
                 <span class="float-right">Three words (action verbs) relating to line 1</span><br />
-                <input type="text">
+                <input type="text" class="poem-form">
                 <span class="float-right">Four words (feelings or a complete sentence) relating to line 1</span><br />
-                <input type="text">
+                <input type="text" class="poem-form">
                 <span class="float-right">One word (synonym of line 1 or word that sums it up)</span>
 
                 <div class="float-clear"></div>
@@ -117,7 +117,7 @@
               <h3>RhymeZone</h3>
               <p>Word: 
                 <input type="text" id="selected-text"> 
-                <button>Get Rhymes</button>
+                <button onclick="setSelectedText()">Get Rhymes</button>
               </p>
             </header>
             <p>

@@ -20,22 +20,35 @@ function getSelectedText2() {
             html = html + sel.toString();
         
     console.log(html);
-    return sel.toString();
+    //return sel.toString();
+    return "test";
 }
 
 function getSelectedText(){
-    $(".poem-form").select( function (e) { 
-    });
-    return window.getSelection().toString();
+    //$(".poem-form").select( function (e) { 
+   // });
+  var currInput = document.getElementsByClassName("poem-form");
+  console.log(currInput);
+  for(var i=0; i<currInput.length; i++){
+    res = currInput[i].value.substring(
+      currInput[i].selectionStart, currInput[i].selectionEnd);
+    console.log("Result: " + res);
+    if(res!=""){
+      return res;
+    }
+  }
+  return "";
 }
 
 function setSelectedText() {
+   //$(document).ready(function (){
     var field = document.getElementById("selected-text");
     field.value = getSelectedText();
     var html = "current word: " + getSelectedText();
         
     console.log(html);
     return true;
+ // });
 }
 
 function tooltip(){
