@@ -113,17 +113,19 @@
             <p></p>
           </article>
           <article>
-            <header>
-              <h3>RhymeZone</h3>
-              <p>Word: 
-                <input type="text" id="selected-text"> 
-                <button onclick="setSelectedText()">Get Rhymes</button>
-              </p>
-            </header>
-            <p>
-              <!-- INSERT RHYME SCRAPER HERE -->
-            </p>
-          </article>
+	  
+	  <h3>Rhymes<h3>
+        <form action="javascript:RhymeBrainSubmit()">
+			<input type=text id="RhymeBrainInput">
+			<input type=submit value=" Get Rhymes!">
+		</form>
+		<script type="text/javascript">
+			var RhymeBrainMaxResults = 30;
+			
+		</script>
+		<script type="text/javascript" src="http://rhymebrain.com/external.js"></script>
+		<h6>Rhyme results are provided by <a href="http://rhymebrain.com">RhymeBrain.com</a></h6>
+      </article>
           <script>
             populate_data();
             setSelectedText();
