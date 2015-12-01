@@ -10,7 +10,6 @@
     <link href="css/pure-min.css" rel="stylesheet">
     <link href="css/grids-responsive-min.css" rel="stylesheet">
     <link href="css/poem.css" rel="stylesheet">
-    <link href="css/simple-sidebar.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,7 +24,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/side_menu.js"></script>
-    <script src="js/jquery.sidebar.min.js"></script>
 
     <title>Insharika</title>
   </head>
@@ -52,12 +50,6 @@
           <form>
           <input type="image" src="img/gold-check.gif" alt="Submit">
         </nav>
-
-        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-
-        <script type="text/javascript">
-          $(".sidebar.right").sidebar({side: "right"});
-        </script>
 
         <footer>
           <ul>
@@ -99,7 +91,7 @@
 
       <div class="pure-u-1-24"></div>
 
-      <div class="pure-u-6-24 sidemenu sidebar-wrapper">
+      <div class="pure-u-6-24 sidemenu">
         <section>
           <header>
             <h2 id="name" name="Cinquain">Cinquain</h2>
@@ -138,14 +130,6 @@
       </div>
     </div>
 
-
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
 
   </body>
 </html>
