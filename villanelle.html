@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-  	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
 
-  	<!-- External CSS -->
-		<link rel="stylesheet" href="style.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
 
-		<!-- JavaScript -->
-		<!-- <script src="code-guide.js"></script> -->
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <!-- JavaScript -->
+    <!-- <script src="code-guide.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
     <script src="js/side_menu.js"></script>
+    <script src="https://cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
     <title>Insharika</title>
   </head>
   <body>
-  	<header>
-    	<h1><a href="index.html">Insharika</a></h1>
+    <header>
+      <h1><a href="index.html">Insharika</a></h1>
     </header>
 
     <hr>
@@ -25,31 +27,39 @@
       <header>
         <h2 id="name" name="Villanelle"></h2>
       </header>
-    	<article>
-    		<header>
-    			<h3>Description</h3>
-    		</header>
-		    <p id="description"></p>
-	    </article>
+      <article>
+        <header>
+          <h3>Description</h3>
+        </header>
+        <p id="description"></p>
+      </article>
       <article>
         <header>
           <h3>Examples</h3>
         </header>
-        <p></p>
+        <a id="example_name" href="#" data-featherlight=".lightbox"></a>
+        <div id="example" style="display: none"></div>
+        <div id="example_author" style="display: none"></div>
+        <script>
+jQuery.featherlight.defaults.afterContent=function(event){
+  populate_example();
+}
+        </script>
+
       </article>
       <article>
-	  
-	  <h3>Rhymes<h3>
+
+        <h3>Rhymes</h3>
         <form action="javascript:RhymeBrainSubmit()">
-			<input type=text id="RhymeBrainInput">
-			<input type=submit value=" Get Rhymes!">
-		</form>
-		
-		<script style="color:blue" type="text/javascript">
-			var RhymeBrainMaxResults = 30;	
-		</script>
-		<script type="text/javascript" src="js/rhymebrainmod.js"></script>
-		<h6>Rhyme results are provided by <a href="http://rhymebrain.com">RhymeBrain.com</a></h6>
+          <input type=text id="RhymeBrainInput">
+          <input type=submit value=" Get Rhymes!">
+        </form>
+
+        <script style="color:blue" type="text/javascript">
+var RhymeBrainMaxResults = 30;	
+        </script>
+        <script type="text/javascript" src="js/rhymebrainmod.js"></script>
+        <h6>Rhyme results are provided by <a href="http://rhymebrain.com">RhymeBrain.com</a></h6>
       </article>
       <script>
 populate_data();
@@ -65,32 +75,34 @@ setSelectedText();
           <input type="text" name="title" placeholder="Title" autofocus>
         </header>
         <article>
-          <p class="poem-form">
+          <div class="lightbox">
+            <p class="poem-form">
             <input type="text"> <span><i>A1</i></span><br />
             <input type="text"> <span><i>b</i></span><br />
             <input type="text"> <span><i>A2</i></span><br />
-          </p>
-          <p class="poem-form">
+            </p>
+            <p class="poem-form">
             <input type="text"> <span><i>a</i></span><br />
             <input type="text"> <span><i>b</i></span><br />
             <input type="text"> <span><i>A1</i></span><br />
-          </p>
-          <p class="poem-form">
+            </p>
+            <p class="poem-form">
             <input type="text"> <span><i>a</i></span><br />
             <input type="text"> <span><i>b</i></span><br />
             <input type="text"> <span><i>A2</i></span><br />
-          </p>
-          <p class="poem-form">
+            </p>
+            <p class="poem-form">
             <input type="text"> <span><i>a</i></span><br />
             <input type="text"> <span><i>b</i></span><br />
             <input type="text"> <span><i>A1</i></span><br />
-          </p>
-          <p class="poem-form">
+            </p>
+            <p class="poem-form">
             <input type="text"> <span><i>a</i></span><br />
             <input type="text"> <span><i>b</i></span><br />
             <input type="text"> <span><i>A1</i></span><br />
             <input type="text"> <span><i>A2</i></span><br />
-          </p>
+            </p>
+          </div>
         </article>
         <input type="reset" value="Clear">
         <input type="submit" value="Submit">
@@ -103,15 +115,15 @@ setSelectedText();
     <hr>
 
     <footer>
-    	<p>Senior design project by
-    	<ul>
-    		<li><a href="">Janvi Chawla</a></li>
-    		<li><a href="">Chelsea Chong</a></li>
-    		<li><a href="">Kristen Lawrence</a></li>
-    		<li><a href="">Jayne Wilson</a></li>
-    		<li><a href="">Kourtney Wright</a></li>
-    	</ul>
-    	</p>
+      <p>Senior design project by
+      <ul>
+        <li><a href="">Janvi Chawla</a></li>
+        <li><a href="">Chelsea Chong</a></li>
+        <li><a href="">Kristen Lawrence</a></li>
+        <li><a href="">Jayne Wilson</a></li>
+        <li><a href="">Kourtney Wright</a></li>
+      </ul>
+      </p>
     </footer>
   </body>
 </html>
