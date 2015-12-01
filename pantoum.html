@@ -102,10 +102,8 @@ document.onmouseup = setSelectedText;
           <script>
 jQuery(document).ready(function() {
   jQuery("span").click(function() {
-    var line = jQuery(this).prev().attr("class");
-    console.log(line);
+    var line = jQuery(this).prev().attr("class").split(" ")[0];
     var text = jQuery(this).prev().val();
-    console.log(text);
     jQuery("."+line).val(text);
   });
 });
