@@ -63,6 +63,7 @@ h2 {
 h3 {
 	/*text-transform: uppercase;*/
 	font-size: 1.2em;
+	font-style: italic;
 }
 
 .sidemenu {
@@ -124,7 +125,7 @@ footer {
 	position: absolute;
 	bottom: 0;
 	text-align: center;
-	border: 1px solid lightgreen;
+	/*border: 1px solid lightgreen;*/
 }
 
 footer ul {
@@ -147,9 +148,9 @@ footer ul li img:hover {
 }
 
 .bg {
-	border: 1px solid pink;
+	/*border: 1px solid pink;*/
 	background-color: #fcfcfc;
-	margin: 7px 0;
+	margin: 10px 0;
 	padding: 10px;
 }
 
