@@ -70,7 +70,7 @@
               <input type="text" name="title" placeholder="Title" autofocus>
             </header>
             <article>
-              <p class>
+              <p>
                 <input type="text" class="poem-form">
                 <span class="float-right" class="poem-form">One word (subject, noun)</span><br />
                 <input type="text" class="poem-form">
@@ -93,39 +93,42 @@
 
       <div class="pure-u-6-24 sidemenu">
         <section>
-          <header>
+          <header class="bg">
             <h2 id="name" name="Cinquain">Cinquain</h2>
           </header>
-          <article>
+          <article class="bg">
             <header>
               <h3>Description</h3>
             </header>
             <p id="description"></p>
           </article>
-          <article>
+          <article class="bg">
             <header>
               <h3>Examples</h3>
             </header>
             <p></p>
           </article>
-          <article>
-	  
-	  <h3>Rhymes<h3>
-        <form action="javascript:RhymeBrainSubmit()">
-			<input type=text id="RhymeBrainInput">
-			<input type=submit value=" Get Rhymes!">
-		</form>
-		<script type="text/javascript">
-			var RhymeBrainMaxResults = 30;
-			
-		</script>
-		<script type="text/javascript" src="http://rhymebrain.com/external.js"></script>
-		<h6>Rhyme results are provided by <a href="http://rhymebrain.com">RhymeBrain.com</a></h6>
-      </article>
-          <script>
-            populate_data();
-            setSelectedText();
-          </script>
+          <article class="bg">
+            <header>
+        	   <h3>Rhymes<h3>
+            </h3>
+            <p>
+              <form action="javascript:RhymeBrainSubmit()">
+          			<input type=text id="RhymeBrainInput">
+          			<input type=submit value=" Get Rhymes!">
+        		  </form>
+          		<script type="text/javascript">
+          			var RhymeBrainMaxResults = 30;
+          		</script>
+          		<script type="text/javascript" src="http://rhymebrain.com/external.js"></script>
+          		<h6>Rhyme results are provided by <a href="http://rhymebrain.com">RhymeBrain.com</a></h6>
+
+              <script>
+                populate_data();
+                setSelectedText();
+              </script>
+            </p>
+          </article>
         </section>
       </div>
     </div>
