@@ -5,12 +5,16 @@
   	<meta charset="UTF-8">
 
   	<!-- External CSS -->
-		<link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
 
 		<!-- JavaScript -->
 		<!-- <script src="code-guide.js"></script> -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-    <script src="js/side_menu.js"></script>
+            <script src="js/side_menu.js"></script>
+            <script src="https://cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
 
     <title>Insharika</title>
   </head>
@@ -29,12 +33,19 @@
     		</header>
 		    <p id="description"></p>
 	    </article>
-      <article>
-        <header>
-          <h3>Examples</h3>
-        </header>
-        <p></p>
-      </article>
+            <article>
+              <header>
+                <h3>Examples</h3>
+              </header>
+              <a id="example_name" href="#" data-featherlight=".lightbox"></a>
+              <div id="example" style="display: none"></div>
+              <div id="example_author" style="display: none"></div>
+              <script>
+jQuery.featherlight.defaults.afterContent=function(event){
+  populate_example();
+}
+              </script>
+            </article>
       <article>
 	  
 	  <h3>Rhymes<h3>
@@ -81,28 +92,30 @@ setSelectedText();
             <input type="text"> <span><i>c</i></span><br />
             <input type="text"> <span><i>d</i></span><br />
           </p>
-          <p class="poem-form">English<br />
+          <div class="lightbox">
+            <p class="poem-form">English<br />
             <input type="text"> <span><i>a</i></span><br />
             <input type="text"> <span><i>b</i></span><br />
             <input type="text"> <span><i>a</i></span><br />
             <input type="text"> <span><i>b</i></span><br />
-          </p>
-          <p class="poem-form">
+            </p>
+            <p class="poem-form">
             <input type="text"> <span><i>c</i></span><br />
             <input type="text"> <span><i>d</i></span><br />
             <input type="text"> <span><i>c</i></span><br />
             <input type="text"> <span><i>d</i></span><br />
-          </p>
-          <p class="poem-form">
+            </p>
+            <p class="poem-form">
             <input type="text"> <span><i>e</i></span><br />
             <input type="text"> <span><i>f</i></span><br />
             <input type="text"> <span><i>e</i></span><br />
             <input type="text"> <span><i>f</i></span><br />
-          </p>
-          <p class="poem-form">
+            </p>
+            <p class="poem-form">
             <input type="text"> <span><i>g</i></span><br />
             <input type="text"> <span><i>g</i></span><br />
-          </p>
+            </p>
+          </div>
         </article>
         <input type="reset" value="Clear">
         <input type="submit" value="Submit">

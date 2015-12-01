@@ -5,8 +5,18 @@ function populate_data() {
       if (f.name == poem_name) {
         jQuery('#name').html(f.name);
         jQuery('#description').html(f.description);
+        jQuery('#example_name').html(f.ex_title);
+        jQuery('#example').html(f.example);
+        jQuery('#example_author').html(f.ex_author);
       }
     });
+  });
+}
+
+function populate_example() {
+  var example_array = jQuery('#example').html().split('|');
+  jQuery(".lightbox:eq(1) :input").each( function(index) {
+    jQuery(this).val(example_array.shift());
   });
 }
 
