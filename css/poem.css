@@ -61,7 +61,7 @@ h2 {
 }
 
 h3 {
-	/*text-transform: uppercase;*/
+	text-transform: capitalize;
 	font-size: 1.2em;
 	font-style: italic;
 }
@@ -152,6 +152,11 @@ footer ul li img:hover {
 	background-color: #fcfcfc;
 	margin: 10px 0;
 	padding: 10px;
+}
+
+.rhymes {
+	height: 200px;
+	overflow: scroll;
 }
 
 .float-left { float: left; }
