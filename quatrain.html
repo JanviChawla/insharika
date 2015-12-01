@@ -63,7 +63,7 @@ jQuery.featherlight.defaults.afterContent=function(event){
       </article>
       <script>
 populate_data();
-setSelectedText();
+document.onmouseup = setSelectedText;
       </script>
     </section>
 
@@ -76,38 +76,36 @@ setSelectedText();
         </header>
         <article>
           <div class="lightbox">
-          <p class="envelope poem-form">Envelope<br />
-            <input type="text"> <span><i>a</i></span><br />
-            <input type="text"> <span><i>b</i></span><br />
-            <input type="text"> <span><i>b</i></span><br />
-            <input type="text"> <span><i>a</i></span><br />
+          <p class="envelope">Envelope<br />
+            <input type="text" class="poem-form"> <span><i>a</i></span><br />
+            <input type="text" class="poem-form"> <span><i>b</i></span><br />
+            <input type="text" class="poem-form"> <span><i>b</i></span><br />
+            <input type="text" class="poem-form"> <span><i>a</i></span><br />
           </p>
-          <p class="couplet poem-form">Couplet<br />
-            <input type="text"> <span><i>a</i></span><br />
-            <input type="text"> <span><i>a</i></span><br />
-            <input type="text"> <span><i>b</i></span><br />
-            <input type="text"> <span><i>b</i></span><br />
+          <p class="couplet">Couplet<br />
+            <input type="text" class="poem-form"> <span><i>a</i></span><br />
+            <input type="text" class="poem-form"> <span><i>a</i></span><br />
+            <input type="text" class="poem-form"> <span><i>b</i></span><br />
+            <input type="text" class="poem-form"> <span><i>b</i></span><br />
           </p>
-          <p class="alternating poem-form">Alternating<br />
-            <input type="text"> <span><i>a</i></span><br />
-            <input type="text"> <span><i>b</i></span><br />
-            <input type="text"> <span><i>a</i></span><br />
-            <input type="text"> <span><i>b</i></span><br />
+          <p class="alternating">Alternating<br />
+            <input type="text" class="poem-form"> <span><i>a</i></span><br />
+            <input type="text" class="poem-form"> <span><i>b</i></span><br />
+            <input type="text" class="poem-form"> <span><i>a</i></span><br />
+            <input type="text" class="poem-form"> <span><i>b</i></span><br />
           </p>
-          <p class="monorhyme poem-form">Monorhyme<br />
-            <input type="text"> <span><i>a</i></span><br />
-            <input type="text"> <span><i>a</i></span><br />
-            <input type="text"> <span><i>a</i></span><br />
-            <input type="text"> <span><i>a</i></span><br />
+          <p class="monorhyme">Monorhyme<br />
+            <input type="text" class="poem-form"> <span><i>a</i></span><br />
+            <input type="text" class="poem-form"> <span><i>a</i></span><br />
+            <input type="text" class="poem-form"> <span><i>a</i></span><br />
+            <input type="text" class="poem-form"> <span><i>a</i></span><br />
           </p>
           </div>
         </article>
         <input type="reset" value="Clear">
         <input type="submit" value="Submit">
       </form>
-      <div id='tooltip'>
-        <button>Rhymes!</button>
-      </div>
+
     </section>
 
     <hr>

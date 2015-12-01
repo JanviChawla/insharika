@@ -65,7 +65,7 @@ jQuery.featherlight.defaults.afterContent=function(event){
       
 	  <script>
 		populate_data();
-		setSelectedText();
+		document.onmouseup = setSelectedText;
       </script>
     </section>
 
@@ -78,19 +78,16 @@ jQuery.featherlight.defaults.afterContent=function(event){
         </header>
         <article>
           <div class="lightbox">
-          <p class="poem-form">
-          <input type="text"> <span>5 syllables</span><br />
-          <input type="text"> <span>7 syllables</span><br />
-          <input type="text"> <span>5 syllables</span><br />
+          <p>
+          <input type="text"class="poem-form"> <span>5 syllables</span><br />
+          <input type="text"class="poem-form"> <span>7 syllables</span><br />
+          <input type="text"class="poem-form"> <span>5 syllables</span><br />
           </p>
           </div>
         </article>
         <input type="reset" value="Clear">
         <input type="submit" value="Submit">
       </form>
-      <div id='tooltip'>
-        <button>Rhymes!</button>
-      </div>
     </section>
 
     <hr>

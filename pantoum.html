@@ -61,7 +61,7 @@ jQuery.featherlight.defaults.afterContent=function(event){
       </article>
       <script>
 populate_data();
-setSelectedText();
+document.onmouseup = setSelectedText;
       </script>
     </section>
 
@@ -74,29 +74,29 @@ setSelectedText();
         </header>
         <article>
           <div class="lightbox">
-          <p class="poem-form">
-          <input type="text" class="line-1"> <span><i>(1)</i></span><br />
-            <input type="text" class="line-2"> <span><i>(2)</i></span><br />
-            <input type="text" class="line-3"> <span><i>(3)</i></span><br />
-            <input type="text" class="line-4"> <span><i>(4)</i></span><br />
+          <p>
+          <input type="text" class="line-1 poem-form"> <span><i>(1)</i></span><br />
+            <input type="text" class="line-2 poem-form"> <span><i>(2)</i></span><br />
+            <input type="text" class="line-3 poem-form"> <span><i>(3)</i></span><br />
+            <input type="text" class="line-4 poem-form"> <span><i>(4)</i></span><br />
           </p>
-          <p class="poem-form">
-            <input type="text" class="line-2"> <span><i>(2)</i></span><br />
-            <input type="text" class="line-5"> <span><i>(5)</i></span><br />
-            <input type="text" class="line-4"> <span><i>(4)</i></span><br />
-            <input type="text" class="line-6"> <span><i>(6)</i></span><br />
+          <p>
+            <input type="text" class="line-2 poem-form"> <span><i>(2)</i></span><br />
+            <input type="text" class="line-5 poem-form"> <span><i>(5)</i></span><br />
+            <input type="text" class="line-4 poem-form"> <span><i>(4)</i></span><br />
+            <input type="text" class="line-6 poem-form"> <span><i>(6)</i></span><br />
           </p>
-          <p class="poem-form">
-            <input type="text" class="line-5"> <span><i>(5)</i></span><br />
-            <input type="text" class="line-7"> <span><i>(7)</i></span><br />
-            <input type="text" class="line-6"> <span><i>(6)</i></span><br />
-            <input type="text" class="line-8"> <span><i>(8)</i></span><br />
+          <p>
+            <input type="text" class="line-5 poem-form"> <span><i>(5)</i></span><br />
+            <input type="text" class="line-7 poem-form"> <span><i>(7)</i></span><br />
+            <input type="text" class="line-6 poem-form"> <span><i>(6)</i></span><br />
+            <input type="text" class="line-8 poem-form"> <span><i>(8)</i></span><br />
           </p>
-          <p class="poem-form">
-            <input type="text" class="line-7"> <span><i>(7)</i></span><br />
-            <input type="text" class="line-3"> <span><i>(3)</i></span><br />
-            <input type="text" class="line-8"> <span><i>(8)</i></span><br />
-            <input type="text" class="line-1"> <span><i>(1)</i></span><br />
+          <p>
+            <input type="text" class="line-7 poem-form"> <span><i>(7)</i></span><br />
+            <input type="text" class="line-3 poem-form"> <span><i>(3)</i></span><br />
+            <input type="text" class="line-8 poem-form"> <span><i>(8)</i></span><br />
+            <input type="text" class="line-1 poem-form"> <span><i>(1)</i></span><br />
           </p>
           </div>
           <script>
@@ -114,9 +114,7 @@ jQuery(document).ready(function() {
         <input type="reset" value="Clear">
         <input type="submit" value="Submit">
       </form>
-      <div id='tooltip'>
-        <button>Rhymes!</button>
-      </div>
+
     </section>
 
     <hr>

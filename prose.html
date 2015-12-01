@@ -63,7 +63,7 @@ jQuery.featherlight.defaults.afterContent=function(event){
       </article>
       <script>
 populate_data();
-setSelectedText();
+document.onmouseup = setSelectedText;
       </script>
 
     </section>
@@ -76,18 +76,15 @@ setSelectedText();
           <input type="text" name="title" placeholder="Title" autofocus>
         </header>
         <article>
-          <div class="lightbox"
-          <p class="poem-form">
-          <textarea rows="10" cols="50"></textarea><br />
+          <div class="lightbox">
+          <p>
+          <textarea rows="10" cols="50" class="poem-form"></textarea><br />
           </p>
           </div>
         </article>
         <input type="reset" value="Clear">
         <input type="submit" value="Submit">
       </form>
-      <div id='tooltip'>
-        <button>Rhymes!</button>
-      </div>
     </section>
 
     <hr>

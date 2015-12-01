@@ -62,7 +62,7 @@ var RhymeBrainMaxResults = 30;
       </article>
       <script>
 populate_data();
-setSelectedText();
+document.onmouseup = setSelectedText;
       </script>
     </section>
 
@@ -75,45 +75,42 @@ setSelectedText();
         </header>
         <article>
           <div class="lightbox">
-            <p class="poem-form">
-            <input type="text"> <span><i>A1</i></span><br />
-            <input type="text"> <span><i>B</i></span><br />
-            <input type="text"> <span><i>A2</i></span><br />
+            <p>
+            <input type="text" class="poem-form"> <span><i>A1</i></span><br />
+            <input type="text" class="poem-form"> <span><i>B</i></span><br />
+            <input type="text" class="poem-form"> <span><i>A2</i></span><br />
             </p>
-            <p class="poem-form">
-            <input type="text"> <span><i>b</i></span><br />
-            <input type="text"> <span><i>C</i></span><br />
-            <input type="text"> <span><i>B</i></span><br />
+            <p>
+            <input type="text" class="poem-form"> <span><i>b</i></span><br />
+            <input type="text" class="poem-form"> <span><i>C</i></span><br />
+            <input type="text" class="poem-form"> <span><i>B</i></span><br />
             </p>
-            <p class="poem-form">
-            <input type="text"> <span><i>c</i></span><br />
-            <input type="text"> <span><i>D</i></span><br />
-            <input type="text"> <span><i>C</i></span><br />
+            <p>
+            <input type="text" class="poem-form"> <span><i>c</i></span><br />
+            <input type="text" class="poem-form"> <span><i>D</i></span><br />
+            <input type="text" class="poem-form"> <span><i>C</i></span><br />
             </p>
-            <p class="poem-form">
-            <input type="text"> <span><i>d</i></span><br />
-            <input type="text"> <span><i>E</i></span><br />
-            <input type="text"> <span><i>D</i></span><br />
+            <p>
+            <input type="text" class="poem-form"> <span><i>d</i></span><br />
+            <input type="text" class="poem-form"> <span><i>E</i></span><br />
+            <input type="text" class="poem-form"> <span><i>D</i></span><br />
             </p>
-            <p class="poem-form">
-            <input type="text"> <span><i>e</i></span><br />
-            <input type="text"> <span><i>F</i></span><br />
-            <input type="text"> <span><i>E</i></span><br />
+            <p>
+            <input type="text" class="poem-form"> <span><i>e</i></span><br />
+            <input type="text" class="poem-form"> <span><i>F</i></span><br />
+            <input type="text" class="poem-form"> <span><i>E</i></span><br />
             </p>
-            <p class="poem-form">
-            <input type="text"> <span><i>f</i></span><br />
-            <input type="text"> <span><i>A1 / F</i></span><br />
-            <input type="text"> <span><i>F / A1</i></span><br />
-            <input type="text"> <span><i>A2</i></span><br />
+            <p>
+            <input type="text" class="poem-form"> <span><i>f</i></span><br />
+            <input type="text" class="poem-form"> <span><i>A1 / F</i></span><br />
+            <input type="text" class="poem-form"> <span><i>F / A1</i></span><br />
+            <input type="text" class="poem-form"> <span><i>A2</i></span><br />
             </p>
           </div>
         </article>
         <input type="reset" value="Clear">
         <input type="submit" value="Submit">
       </form>
-      <div id='tooltip'>
-        <button>Rhymes!</button>
-      </div>
     </section>
 
     <hr>

@@ -62,7 +62,7 @@ jQuery.featherlight.defaults.afterContent=function(event){
       </article>
       <script>
 populate_data();
-setSelectedText();
+document.onmouseup = setSelectedText;
       </script>
     </section>
 
@@ -75,34 +75,31 @@ setSelectedText();
         </header>
         <article>
           <div class="lightbox">
-          <p class="poem-form">
-            <input type="text"> <span></span><br />
-            <input type="text"> <span><i>a</i></span><br />
+          <p>
+            <input type="text"class="poem-form"> <span></span><br />
+            <input type="text"class="poem-form"> <span><i>a</i></span><br />
           </p>
-          <p class="poem-form">
-            <input type="text"> <span></span><br />
-            <input type="text"> <span><i>a</i></span><br />
+          <p>
+            <input type="text"class="poem-form"> <span></span><br />
+            <input type="text"class="poem-form"> <span><i>a</i></span><br />
           </p>
-          <p class="poem-form">
-            <input type="text"> <span></span><br />
-            <input type="text"> <span><i>a</i></span><br />
+          <p>
+            <input type="text"class="poem-form"> <span></span><br />
+            <input type="text"class="poem-form"> <span><i>a</i></span><br />
           </p>
-          <p class="poem-form">
-            <input type="text"> <span></span><br />
-            <input type="text"> <span><i>a</i></span><br />
+          <p>
+            <input type="text"class="poem-form"> <span></span><br />
+            <input type="text"class="poem-form"> <span><i>a</i></span><br />
           </p>
-          <p class="poem-form">
-            <input type="text"> <span></span><br />
-            <input type="text"> <span>Include your name. <i>a</i></span><br />
+          <p>
+            <input type="text"class="poem-form"> <span></span><br />
+            <input type="text"class="poem-form"> <span>Include your name. <i>a</i></span><br />
           </p>
           </div>
         </article>
         <input type="reset" value="Clear">
         <input type="submit" value="Submit">
       </form>
-      <div id='tooltip'>
-        <button>Rhymes!</button>
-      </div>
     </section>
 
     <hr>

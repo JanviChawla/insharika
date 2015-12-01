@@ -20,69 +20,43 @@ function populate_example() {
   });
 }
 
-function getSelectedText2() {
-    var html = "selected text: ";
+var selectedTxt = "";
 
-        var sel = window.getSelection();
-        console.log(sel);
-        //if (sel.rangeCount) {
-          console.log("range count: " + sel.rangeCount);
-            html = html + sel.toString();
-        
-    console.log(html);
-    //return sel.toString();
-    return "test";
-}
-
-function getSelectedText(){
-    //$(".poem-form").select( function (e) { 
-   // });
-  var currInput = document.getElementsByClassName("poem-form");
-  console.log(currInput);
-  for(var i=0; i<currInput.length; i++){
-    res = currInput[i].value.substring(
-      currInput[i].selectionStart, currInput[i].selectionEnd);
-    console.log("Result: " + res);
-    if(res!=""){
-      return res;
-    }
+function getTextHelper(thing){
+  var text = "";
+  for(var i=0; i<thing.length; i++){
+    var start = thing[i].selectionStart;
+    var end = thing[i].selectionEnd;
+    text = text + thing[i].value.substring(start, end);
   }
-  return "";
+  return text;
 }
+
+function getSelectedText() {
+    var currText = "";
+    if(typeof window.getSelection != "undefined"){
+      currText = window.getSelection().toString();
+    }else if (typeof document.selection != "undefined"){
+      currText = getTextHelper(document.getElementsByClassName("poem-form"));
+    }
+    //console.log("new method res: " + currText);
+    if(currText!=""){
+      selectedTxt = currText;
+    }
+    return currText;
+}
+
 
 function setSelectedText() {
-   //$(document).ready(function (){
-    var field = document.getElementById("selected-text");
-    field.value = getSelectedText();
-    var html = "current word: " + getSelectedText();
-        
-    console.log(html);
-    return true;
- // });
+  if((window.getSelection().toString() == "") && (getTextHelper(document.getElementsByClassName("poem-form"))=="")){
+    //console.log("do not change txt");
+    return false;
+  }
+  //console.log("mouseup working!");
+  var field = document.getElementById("RhymeBrainInput");
+  getSelectedText();
+  field.value = selectedTxt;
+  return true;
 }
 
-function tooltip(){
 
-    $(document).ready(function (){
-   $("#tooltip").hide();
-   $('.poem-form').mouseup(function (e){
-        var x = e.clientX;
-        var y = e.clientY;
-        placeTooltip(x, y);
-        if(getSelectedText()!=""){
-         $("#tooltip").show();
-        setSelectedText();
-         }else{
-            $("#tooltip").hide();
-         }
-        
-   })
-});
-}
-
-function placeTooltip(x_pos, y_pos) {
-    var tooldiv = document.getElementById('tooltip');
-    tooldiv.style.position = "absolute";
-    tooldiv.style.left = x_pos+10 + 'px';
-    tooldiv.style.top = y_pos + 'px';
-}
