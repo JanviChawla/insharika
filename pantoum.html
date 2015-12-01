@@ -103,8 +103,10 @@ setSelectedText();
 jQuery(document).ready(function() {
   jQuery("span").click(function() {
     var line = jQuery(this).prev().attr("class");
+    console.log(line);
     var text = jQuery(this).prev().val();
-    jQuery(line).val(text);
+    console.log(text);
+    jQuery("."+line).val(text);
   });
 });
           </script>
