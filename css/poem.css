@@ -95,6 +95,16 @@ h3 {
 	font-size: 2em;
 }
 
+.main textarea {
+	border: none;
+	border-bottom: 2px solid #ddd;
+	padding: 10px 0 10px 0;
+	margin: 10px 0 10px 0;
+	width: 100%;
+	background-color: #fcfcfc;
+	height: 100%;
+}
+
 span {
 	margin-top: -8px;
 	color: #aaa;
