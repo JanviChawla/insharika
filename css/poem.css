@@ -16,7 +16,7 @@ body {
 	bottom: 0;
 	right: 0;
 	left: 0;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 }
 
 .header {
@@ -61,8 +61,9 @@ h2 {
 }
 
 h3 {
-	/*text-transform: uppercase;*/
+	text-transform: capitalize;
 	font-size: 1.2em;
+	font-style: italic;
 }
 
 .sidemenu {
@@ -92,6 +93,16 @@ h3 {
 .main input[name="title"] {
 	text-align: center;
 	font-size: 2em;
+}
+
+.main textarea {
+	border: none;
+	border-bottom: 2px solid #ddd;
+	padding: 10px 0 10px 0;
+	margin: 10px 0 10px 0;
+	width: 100%;
+	background-color: #fcfcfc;
+	height: 100%;
 }
 
 span {
@@ -124,7 +135,7 @@ footer {
 	position: absolute;
 	bottom: 0;
 	text-align: center;
-	border: 1px solid lightgreen;
+	/*border: 1px solid lightgreen;*/
 }
 
 footer ul {
@@ -147,10 +158,21 @@ footer ul li img:hover {
 }
 
 .bg {
-	border: 1px solid pink;
+	/*border: 1px solid pink;*/
 	background-color: #fcfcfc;
-	margin: 7px 0;
+	margin: 10px 0;
 	padding: 10px;
+}
+
+.rhymes {
+	height: 100px;
+	overflow: scroll;
+}
+
+.editor {
+	padding: 10px;
+	height: 100%;
+	overflow: scroll;
 }
 
 .float-left { float: left; }
