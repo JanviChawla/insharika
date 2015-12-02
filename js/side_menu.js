@@ -17,7 +17,9 @@ function populate_example() {
   var example_array = jQuery('#example').html().split('|');
   jQuery(".lightbox:eq(1) :input").each( function(index) {
     jQuery(this).val(example_array.shift());
+    jQuery(this).css("width", "100%");
   });
+  jQuery(".lightbox:eq(1) .float-right").css("display", "table-cell");
   jQuery(".lightbox:eq(1) .float-right").removeClass("float-right");
 }
 
