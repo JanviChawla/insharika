@@ -67,7 +67,7 @@ h3 {
 }
 
 .sidemenu {
-	padding: 25px;
+	padding: 0 25px;
 	/*box-shadow: 0 -10px 10px #cdcdcd;*/
 	/*border-left: 3px solid #ddd;*/
 	background-image: url("../img/symphony.png");
@@ -160,8 +160,8 @@ footer ul li img:hover {
 .bg {
 	/*border: 1px solid pink;*/
 	background-color: #fcfcfc;
-	margin: 10px 0;
-	padding: 10px;
+	margin-bottom: 10px;
+	padding: 5px 10px;
 }
 
 .rhymes {
