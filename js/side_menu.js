@@ -14,10 +14,11 @@ function populate_data() {
 }
 
 function populate_example() {
+  jQuery(".featherlight .featherlight-content").css("min-width", "50%");
   var example_array = jQuery('#example').html().split('|');
   jQuery(".lightbox:eq(1) :input").each( function(index) {
     jQuery(this).val(example_array.shift());
-    jQuery(this).css("width", "100%");
+    jQuery(this).css({"width":"100%","border-style":"none none solid none","font-size":"18px"});
   });
   jQuery(".lightbox:eq(1) .float-right").css("display", "table-cell");
   jQuery(".lightbox:eq(1) .float-right").removeClass("float-right");
