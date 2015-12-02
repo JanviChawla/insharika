@@ -18,6 +18,7 @@ function populate_example() {
   jQuery(".lightbox:eq(1) :input").each( function(index) {
     jQuery(this).val(example_array.shift());
   });
+  jQuery(".lightbox:eq(1) .float-right").removeClass("float-right");
 }
 
 var selectedTxt = "";
