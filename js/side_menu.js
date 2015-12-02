@@ -22,6 +22,8 @@ function populate_example() {
   });
   jQuery(".lightbox:eq(1) .float-right").css("display", "table-cell");
   jQuery(".lightbox:eq(1) .float-right").removeClass("float-right");
+  jQuery(".featherlight .featherlight-content").prepend("<h3>by "+jQuery("#example_author").html()+"</h3>");
+  jQuery(".featherlight .featherlight-content").prepend("<h2>"+jQuery("#example_name").html()+"</h2>");
 }
 
 var selectedTxt = "";
