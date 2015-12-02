@@ -293,7 +293,7 @@ function display(words, div)
     var highest;
     var wordclass = "wordpanel";
     var firstSeparator = true;
-
+	
     for( i = 0; i < words.length; i++ ) {
 
         if ( highest === undefined ) {
@@ -317,7 +317,47 @@ function display(words, div)
         div[0].t = words[i]["word"];
         resultDiv.append(div);
     }
+}
 
+//Added display function to display as list, not array
+function displayStr(words, div) 
+{
+	var resultDiv = jQuery(div);
+	resultDiv.empty();
+	
+	var i;
+	
+	if (words.length == 0) 
+	{
+		resultDiv.text("No rhymes were found.");
+	}
+	
+	setResultStyle(resultDiv[0]);
+	
+	var highest;
+	var wordclass = "wordpanel";
+	var firstSeparator = true;
+	var str = "";
+	
+	for(i = 0; i < words.length; i++ )
+	{
+		if (highest == undefined) 
+		{
+			highest = words[i]["score"];
+		}
+		
+		div = jQuery("<div>").text(words[i]["word"]);
+		setStyle(div[0]);
+		
+		if (i <= words.length - 2) { 
+			str = str.concat(words[i]["word"] + ", ");
+		} else {
+			str = str.concat(words[i]["word"]);
+		}
+		
+	
+		resultDiv.text(str);
+	}
 }
 
 function RhymeBrainSubmit()
@@ -341,7 +381,7 @@ function RhymeBrainSubmit()
 
 function RhymeBrainResponse(data)
 {
-    display(data, resultDiv );
+    displayStr(data, resultDiv );
 }
 
 
