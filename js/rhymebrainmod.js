@@ -272,8 +272,8 @@ function setH4Style(h4)
 
 function setResultStyle(res) 
 {
-	res.style.maxWidth="50%";
-	res.style.border = "thin dotted gray";
+	res.style.maxWidth="75%";
+	res.style.alignContent="center";
 	res.style.overflow = "auto";
 }
 
