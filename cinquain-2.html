@@ -109,18 +109,20 @@
             <p></p>
           </article>
           <article class="bg">
-	  
-			  <h3>Rhymes<h3>
-				<form action="javascript:RhymeBrainSubmit()">
-					<input type=text id="RhymeBrainInput">
-					<input type=submit value=" Get Rhymes!">
-				</form>
-				
-				<script type="text/javascript">
-					var RhymeBrainMaxResults = 30;	
-				</script>
-				<script type="text/javascript" src="js/rhymebrainmod.js"></script>
-				<h6>Rhyme results are provided by <a href="http://rhymebrain.com">RhymeBrain.com</a></h6>
+            <header>
+        	   <h3>Rhymes<h3>
+            </h3>
+            <p>
+              <form action="javascript:RhymeBrainSubmit()">
+          			<input type=text id="RhymeBrainInput">
+          			<input type=submit value=" Get Rhymes!">
+        		  </form>
+          		<script type="text/javascript">
+          			var RhymeBrainMaxResults = 30;
+          		</script>
+          		<script type="text/javascript" src="http://rhymebrain.com/external.js"></script>
+          		<h6>Rhyme results are provided by <a href="http://rhymebrain.com">RhymeBrain.com</a></h6>
+
               <script>
                 populate_data();
                 document.onmouseup = setSelectedText;

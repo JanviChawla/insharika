@@ -46,21 +46,19 @@ jQuery.featherlight.defaults.afterContent=function(event){
 }
               </script>
       </article>
-	 <article>
-	  
+	  <article>
 	  <h3>Rhymes<h3>
         <form action="javascript:RhymeBrainSubmit()">
 			<input type=text id="RhymeBrainInput">
 			<input type=submit value=" Get Rhymes!">
 		</form>
-		
 		<script type="text/javascript">
-			var RhymeBrainMaxResults = 30;	
+			var RhymeBrainMaxResults = 30;
+			
 		</script>
-		<script type="text/javascript" src="js/rhymebrainmod.js"></script>
+		<script type="text/javascript" src="http://rhymebrain.com/external.js"></script>
 		<h6>Rhyme results are provided by <a href="http://rhymebrain.com">RhymeBrain.com</a></h6>
       </article>
-	  
       <script>
 		populate_data();
 		document.onmouseup = setSelectedText;
