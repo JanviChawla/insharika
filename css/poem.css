@@ -16,7 +16,7 @@ body {
 	bottom: 0;
 	right: 0;
 	left: 0;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 }
 
 .header {
@@ -156,6 +156,12 @@ footer ul li img:hover {
 
 .rhymes {
 	height: 200px;
+	overflow: scroll;
+}
+
+.editor {
+	padding: 10px;
+	height: 100%;
 	overflow: scroll;
 }
 
