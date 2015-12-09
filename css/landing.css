@@ -14,7 +14,7 @@ body {
 }
 
 .main {
-	background-color: #fcfcfc;
+	background-color: #fff;
 	padding: 20px;
 	box-shadow: 0 0 10px #cdcdcd;
 	text-align: center;
@@ -51,7 +51,7 @@ nav ul li {
 
 nav ul li:hover {
 	background-color: #333;
-	color: #fcfcfc;
+	color: #fff;
 	/*font-weight: bold;*/
 }
 
