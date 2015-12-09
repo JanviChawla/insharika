@@ -4,8 +4,6 @@ Fixed form poetry writing tool/editor
 ##For Developers
 Insharika is a static HTML web application which uses Bootstrap, JQuery and Javascript to function.
 
-This project does not require any special compiler.
-
 ###Setting up Dependencies
 ####Bootstrap
 Get Bootstrap here: http://getbootstrap.com
